@@ -1,0 +1,220 @@
+﻿/* Overall Navbar Styling */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3a1f1f; /* Dark Brown Background */
+    color: white;
+    padding: 10px 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.logo img {
+    height: 50px; /* Resize Logo */
+    width: auto;
+}
+
+/* Location Section */
+.location {
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-size: 14px;
+}
+
+    .location select {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+/* Delivery Info */
+.delivery-info {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+    .search-bar input {
+        padding: 6px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .search-bar button:hover {
+            background-color: #218838;
+        }
+
+/* Nav Options (Icons + Links) */
+.nav-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .nav-options a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+        .nav-options a:hover {
+            text-decoration: underline;
+        }
+
+    .nav-options i {
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-options span {
+        font-weight: bold;
+        color: white;
+        font-size: 14px;
+        
+    }
+.sub-navbar {
+    background-color: #f89651; /* Slightly lighter than main navbar */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+    .sub-navbar a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .sub-navbar a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+/* Custom Carousel Styling */
+#carouselExampleRide {
+    width: 100%; /* Almost full-screen width */
+    max-width: 2000px; /* Increased max width for larger screens */
+    margin: 20px auto; /* Center the carousel */
+    border: 1px solid #ddd; /* Add border for separation */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Polished shadow */
+}
+
+    /* Carousel Images */
+    #carouselExampleRide img {
+        height: 300px; /* Compact height */
+        object-fit: cover; /* Proper cropping without distortion */
+        width: 100%; /* Stretch to the full container width */
+    }
+
+/* Updated Controls Styling: Remove "<" and ">" */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Increase button size */
+    height: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+/* Hide visually-hidden labels */
+.carousel .visually-hidden {
+    display: none; /* Fully hide visually-hidden labels */
+}
+
+/* On Hover: Darker navigation buttons */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+
+
+
+
+
+/* Popular Categories Section */
+.popular-categories {
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+    .popular-categories h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.category-item {
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .category-item img {
+        width: 80px; /* Adjust image size */
+        height: 80px;
+        object-fit: contain; /* Keep aspect ratio */
+        margin-bottom: 10px;
+    }
+
+    .category-item p {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .category-item:hover {
+        transform: translateY(-5px); /* Slight hover effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
