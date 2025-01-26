@@ -133,8 +133,12 @@
 }
 
     /* Carousel Images */
+       /* Carousel Images */
     #carouselExampleRide img {
-        height: 300px; /* Compact height */
+     
+    height: 500px !important;
+
+/* Compact height */
         object-fit: cover; /* Proper cropping without distortion */
         width: 100%; /* Stretch to the full container width */
     }
